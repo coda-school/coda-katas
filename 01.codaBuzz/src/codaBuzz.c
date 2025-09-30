@@ -9,7 +9,7 @@ const char *number_to_string(const int n) {
     return buffer;
 }
 
-const char *coda_word(const int n) {
+const char *convert(const int n) {
     if (n < 1 || n > 100) {
         return NULL;
     }

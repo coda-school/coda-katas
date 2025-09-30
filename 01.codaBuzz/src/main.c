@@ -4,7 +4,7 @@
 
 int main(void) {
     for (int i = 1; i <= 100; i++) {
-        printf("%s ", coda_word(i));
+        printf("%s ", convert(i));
     }
     printf("\n");
     return 0;
