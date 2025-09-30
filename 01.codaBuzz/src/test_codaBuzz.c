@@ -15,12 +15,17 @@ void out_of_range_for_negative_numbers(void) {
     assertOutOfRangeFor(INT_MIN);
 }
 
+void out_of_range_for_numbers_gt_100(void) {
+    assertOutOfRangeFor(101);
+}
+
 void returns_number_for_classic_ones(void) {
     assert(strcmp(coda_word(1), "1") == 0);
 }
 
 int main(void) {
     out_of_range_for_negative_numbers();
+    out_of_range_for_numbers_gt_100();
     returns_number_for_classic_ones();
 
     printf("✅ All tests ran successfully\n");
