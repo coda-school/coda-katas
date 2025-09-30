@@ -16,7 +16,7 @@ Write a function that returns for a given number from 1 to 100 this given number
 - For the multiples of 5 returns “Buzz”
 - For numbers which are multiples of both 3 and 5 returns “CodaBuzz”
 
-![CodaBuzz](../img/coda-buzz.webp)
+![CodaBuzz](img/coda-buzz.webp)
 
 Le kata d'origine est le [`FizzBuzz`](https://codingdojo.org/fr/kata/FizzBuzz/).
 
@@ -50,10 +50,17 @@ gcc test_codaBuzz.c codaBuzz.c -o bin/test_codaBuzz
 * ...
 
 ### Bonus
-- Montrer la puissance de l'IDE sur le refactoring
-- Configurer `Actions on Save`
+- Montrer la puissance de l'IDE
+  - Automated refactoring
+  - Generate Code From Usage
+  - Configurer `Actions on Save`
 - `TDD`
 - ...
+
+## Proposition de "solution"
+Vous pouvez retrouver une proposition de solution dans la branche `coda_buzz`.
+
+![Steps](img/steps.webp)
 
 ### Conclusion
 Prendre un temps de rétrospective en utilisant la matrice proposée [ici](../PAIR-PROGRAMMING.md), puis :
