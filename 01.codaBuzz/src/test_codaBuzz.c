@@ -21,6 +21,7 @@ void out_of_range_for_numbers_gt_100(void) {
 
 void returns_number_for_classic_ones(void) {
     assert(strcmp(coda_word(1), "1") == 0);
+    assert(strcmp(coda_word(16), "16") == 0);
 }
 
 int main(void) {
