@@ -47,6 +47,12 @@ gcc test_codaBuzz.c codaBuzz.c -o bin/test_codaBuzz
 * Add a voice output
 * ...
 
+### Bonus
+- Montrer la puissance de l'IDE sur le refactoring
+- Configurer `Actions on Save`
+- `TDD`
+- ...
+
 ### Conclusion
 Prendre un temps de rétrospective en utilisant la matrice proposée [ici](../PAIR-PROGRAMMING.md), puis :
 - What did you do faster than usual in pair ?
