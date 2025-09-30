@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "codaBuzz.h"
 
-void returns_number_for_classic_ones() {
+void returns_number_for_classic_ones(void) {
     assert(strcmp(coda_word(1), "1") == 0);
 }
 

@@ -18,29 +18,34 @@ Write a function that returns for a given number from 1 to 100 this given number
 
 ![CodaBuzz](../img/codabuzz.webp)
 
-### Comment faire ?
-
-
-```shell
-# Compiler le programme principal
-gcc main.c coda.c -o coda
-./coda
-
-# Compiler et lancer les tests
-gcc test_coda.c coda.c -o test_coda
-./test_coda
+Vous pouvez créer des tests comme celui-ci afin de piloter votre implémentation :
+```C
+void returns_number_for_classic_ones(void) {
+    assert(strcmp(coda_word(1), "1") == 0);
+}
 ```
 
+Pour compiler et exécuter :
+```shell
+mkdir -p bin
 
-En **pair** :
-- Découvrir la mission de la [semaine 1](https://github.com/coda-school/cahier-de-vacances-b3/blob/main/exercise/week01/docs/MISSION.md)
-- Se mettre d'accord sur la stack à utiliser
-- Réfléchir comment implémenter la solution
-    - Partir du test
-- Coder la solution en `Pair Programming` (Driver / Navigator)
-    - Changer de rôle toutes les 5 minutes
+# Compiler le programme principal
+gcc main.c codaBuzz.c -o bin/codaBuzz
+./bin/codaBuzz
 
-> Débrief général en fin de session
+# Compiler et lancer les tests
+gcc test_codaBuzz.c codaBuzz.c -o bin/test_codaBuzz
+./bin/test_codaBuzz
+```
+
+## Too easy ?
+* Remove “if” in your code
+* Parameterize your algorithm, implement this method :
+    * int limit : 100
+    * int coda : 3
+    * int buzz : 5
+* Add a voice output
+* ...
 
 ### Conclusion
 - What did you do faster than usual in pair ?
