@@ -40,3 +40,26 @@ const char *convert_with_handler(const int input, ResultHandler handler) {
     }
     return result;
 }
+
+const char *convert_without_if(const int input) {
+    static const char *possible_results[] = {NULL, BUZZ, CODA, CODABUZZ};
+
+    const int coda = input % 3 == 0;
+    const int buzz = input % 5 == 0;
+
+    /*
+    *This line combines two boolean values (coda and buzz) into a single integer index using bitwise operations:
+        - coda << 1 shifts the value of coda (0 or 1) left by one bit, making it 0 or 2.
+        - buzz is 0 or 1.
+
+    The bitwise OR (|) combines them:
+        - neither is true: 0 << 1 | 0 → 0
+        - only buzz is true: 0 << 1 | 1 → 1
+        - only coda is true: 1 << 1 | 0 → 2
+        - both are true: 1 << 1 | 1 → 3
+    */
+    const int index = coda << 1 | buzz; // 0: none, 1: Buzz, 2: Coda, 3: CodaBuzz
+    const char *result = possible_results[index];
+
+    return result != NULL ? result : number_to_string(input);
+}

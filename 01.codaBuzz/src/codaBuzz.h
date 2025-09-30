@@ -1,10 +1,12 @@
 #ifndef CODA_H
 #define CODA_H
 
-const char *convert(int input);
-
 typedef void (*ResultHandler)(const char *);
 
+const char *convert(int input);
+
 const char *convert_with_handler(int input, ResultHandler);
+
+const char *convert_without_if(int input);
 
 #endif
