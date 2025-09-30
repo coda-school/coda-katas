@@ -5,10 +5,14 @@
 
 #include "codaBuzz.h"
 
+void assertOutOfRangeFor(const int value) {
+    assert(coda_word(value) == NULL);
+}
+
 void out_of_range_for_negative_numbers(void) {
-    assert(coda_word(-1) == NULL);
-    assert(coda_word(0) == NULL);
-    assert(coda_word(INT_MIN) == NULL);
+    assertOutOfRangeFor(-1);
+    assertOutOfRangeFor(0);
+    assertOutOfRangeFor(INT_MIN);
 }
 
 void returns_number_for_classic_ones(void) {
