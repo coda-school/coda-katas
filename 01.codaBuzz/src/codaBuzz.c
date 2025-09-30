@@ -14,5 +14,7 @@ const char *convert(const int n) {
         return NULL;
     }
     if (n % 3 == 0) return "Coda";
+    if (n % 5 == 0) return "Buzz";
+
     return number_to_string(n);
 }
