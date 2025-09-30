@@ -13,6 +13,7 @@ const char *convert(const int n) {
     if (n < 1 || n > 100) {
         return NULL;
     }
+    if (n % 15 == 0) return "CodaBuzz";
     if (n % 3 == 0) return "Coda";
     if (n % 5 == 0) return "Buzz";
 

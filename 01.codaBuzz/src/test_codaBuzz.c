@@ -46,6 +46,12 @@ void buzz_for_multiples_of_5(void) {
     assert_conversion(85, "Buzz");
 }
 
+void coda_buzz_for_multiples_of_3_and_5(void) {
+    assert_conversion(15, "CodaBuzz");
+    assert_conversion(45, "CodaBuzz");
+    assert_conversion(90, "CodaBuzz");
+}
+
 int main(void) {
     out_of_range_for_negative_numbers();
     out_of_range_for_numbers_gt_100();
@@ -53,6 +59,7 @@ int main(void) {
     number_for_classic_ones();
     coda_for_multiples_of_3();
     buzz_for_multiples_of_5();
+    coda_buzz_for_multiples_of_3_and_5();
 
     printf("✅ All tests ran successfully\n");
     return 0;
