@@ -16,7 +16,9 @@ Write a function that returns for a given number from 1 to 100 this given number
 - For the multiples of 5 returns “Buzz”
 - For numbers which are multiples of both 3 and 5 returns “CodaBuzz”
 
-![CodaBuzz](../img/codabuzz.webp)
+![CodaBuzz](../img/coda-buzz.webp)
+
+Le kata d'origine est le [`FizzBuzz`](https://codingdojo.org/fr/kata/FizzBuzz/).
 
 Vous pouvez créer des tests comme celui-ci afin de piloter votre implémentation :
 ```C
