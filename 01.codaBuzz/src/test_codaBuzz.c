@@ -31,6 +31,13 @@ void assert_conversion(const int value, const char *expectedValue) {
 void number_for_classic_ones(void) {
     assert_conversion(1, "1");
     assert_conversion(16, "16");
+    assert_conversion(91, "91");
+}
+
+void coda_for_multiples_of_3(void) {
+    assert_conversion(3, "Coda");
+    assert_conversion(63, "Coda");
+    assert_conversion(81, "Coda");
 }
 
 int main(void) {
@@ -38,6 +45,7 @@ int main(void) {
     out_of_range_for_numbers_gt_100();
 
     number_for_classic_ones();
+    coda_for_multiples_of_3();
 
     printf("✅ All tests ran successfully\n");
     return 0;

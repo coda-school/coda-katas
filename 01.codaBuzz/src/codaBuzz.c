@@ -13,5 +13,6 @@ const char *convert(const int n) {
     if (n < 1 || n > 100) {
         return NULL;
     }
+    if (n % 3 == 0) return "Coda";
     return number_to_string(n);
 }
