@@ -33,7 +33,7 @@ const char *convert(const int input) {
     return convert_safely(input);
 }
 
-const char *convert_with_handler(const int input, ResultHandler handler) {
+const char *convert_with_handler(const int input, const ResultHandler handler) {
     const char *result = convert(input);
     if (result != NULL && handler != NULL) {
         handler(result);
