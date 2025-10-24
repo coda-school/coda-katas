@@ -4,3 +4,4 @@ Sur ce repository, nous centralisons des code katas à destination de nos étudi
 ![Coda Katas](img/coda-katas.webp)
 
 - [`CodaBuzz game` en `C`](01.codaBuzz/README.md)
+- [`Pricing`](02.pricing/README.md)
