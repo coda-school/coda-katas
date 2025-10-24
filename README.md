@@ -5,3 +5,4 @@ Sur ce repository, nous centralisons des code katas à destination de nos étudi
 
 - [`CodaBuzz game` en `C`](01.codaBuzz/README.md)
 - [`Pricing`](02.pricing/README.md)
+- [`String Calculator`](03.pricing/README.md)
