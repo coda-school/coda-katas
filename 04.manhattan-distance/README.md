@@ -5,6 +5,7 @@ Contrairement à la distance "à vol d'oiseau", les livreurs ne peuvent se dépl
 
 Votre mission : **calculer la distance réelle parcourue par un livreur** entre deux points de livraison, en utilisant la **distance de Manhattan**.
 
+![manhattan.webp](img/manhattan.webp)
 
 ### **Besoin Métier**
 1. **Calculer la distance entre deux points** :
@@ -28,12 +29,12 @@ Votre mission : **calculer la distance réelle parcourue par un livreur** entre 
 
 ### **Exemples de Scénarios**
 
-| Point A  | Point B  | Distance de Manhattan | Explication                                  |
-|----------|----------|-----------------------|----------------------------------------------|
-| (1, 2)   | (4, 6)   | 7                     | \( |4-1| + |6-2| = 3 + 4 = 7 \)          |
-| (0, 0)   | (3, 4)   | 7                     | \( |3-0| + |4-0| = 3 + 4 = 7 \)          |
-| (5, 5)   | (5, 5)   | 0                     | Pas de déplacement.                          |
-| (-2, 3)  | (1, -1)  | 7                     | \( |1-(-2)| + |-1-3| = 3 + 4 = 7 \)      |
+| Point A  | Point B  | Distance de Manhattan | Explication               |
+|----------|----------|-----------------------|---------------------------|
+| (1, 2)   | (4, 6)   | 7                     | 4-1 + 6-2 = 3 + 4 = 7     |
+| (0, 0)   | (3, 4)   | 7                     | 3-0 + 4-0 = 3 + 4 = 7     |
+| (5, 5)   | (5, 5)   | 0                     | Pas de déplacement.       |
+| (-2, 3)  | (1, -1)  | 7                     | 1- -2 + -1-3 = 3 + 4 = 7  |
 
 ---
 
