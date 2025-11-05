@@ -27,7 +27,9 @@ void true_for_prime_numbers(void) {
 }
 
 void false_for_not_prime_numbers(void) {
-
+    must_not_be_prime(4);
+    must_not_be_prime(6);
+    must_not_be_prime(12);
 }
 
 void false_for_invalid_numbers(void) {

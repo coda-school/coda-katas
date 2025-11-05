@@ -1,5 +1,12 @@
 #include <stdbool.h>
 
 bool isPrime(const int number) {
-    return number == 5 || number == 7 || number == 13;
+    if (number <= 1) return false;
+
+    for (int i = 2; i < number; i++) {
+        if (number % i == 0) {
+            return false;
+        }
+    }
+    return true;
 }
