@@ -1,3 +1,5 @@
-int doSomething(void) {
-    return 42;
+#include <stdbool.h>
+
+bool isPrime(int number) {
+    return number == 5;
 }
