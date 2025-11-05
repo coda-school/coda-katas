@@ -2,6 +2,6 @@
 #define CODA_H
 #include <stdbool.h>
 
-const bool isPrime(int number);
+const bool is_prime(int number);
 
 #endif
