@@ -7,7 +7,7 @@ Le rover se déplace sur un plateau rectangulaire et exécute une série de comm
 
 ![mars.webp](img/mars.webp)
 
-#### **Objectif**
+#### **Objectifs**
 Écrire un programme qui permet de :
 1. **Positionner un rover** sur un plateau martien.
 2. **Envoyer une série de commandes** pour le déplacer.
