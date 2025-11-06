@@ -4,7 +4,7 @@
 
 #include "prime.h"
 
-typedef void (*FunctionToMeasure)(void);
+typedef void (*CallToMeasure)(void);
 
 void assert_prime(const int value, const bool expected) {
     const bool result = is_prime(value);
@@ -22,7 +22,7 @@ void must_be_prime(const int value) {
     assert_prime(value, true);
 }
 
-double measureExecutionTimeFor(FunctionToMeasure procedure) {
+double measureExecutionTimeFor(CallToMeasure procedure) {
     const clock_t start_time = clock();
     procedure();
 
@@ -40,8 +40,10 @@ void true_for_prime_numbers(void) {
     must_be_prime(7);
     must_be_prime(13);
 
-    const double time = measureExecutionTimeFor(test_large_prime);
-    printf("Time taken to execute must_be_prime(2147483647): %f seconds\n", time);
+    printf(
+        "Time taken to execute must_be_prime(2147483647): %f seconds\n",
+        measureExecutionTimeFor(test_large_prime)
+    );
 }
 
 void false_for_not_prime_numbers(void) {
