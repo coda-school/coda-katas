@@ -39,3 +39,6 @@ venv.bak/
 
 # Databases
 *.db
+
+# php
+vendor/
