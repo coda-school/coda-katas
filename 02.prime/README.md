@@ -4,8 +4,6 @@
 * Gérer des cas simples puis complexes.
 * Pratiquer les boucles, les conditions et l'optimisation des algorithmes.
 
-
-
 ### Énoncé
 Écrire une fonction `isPrime` qui prend un **nombre entier** et retourne `true` si le nombre est premier, sinon `false`.
 
