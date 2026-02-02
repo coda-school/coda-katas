@@ -11,3 +11,4 @@ Sur ce repository, nous centralisons des code katas à destination de nos étudi
 - [Manhattan Distance](06.manhattan-distance/README.md)
 - [Bowling Game](07.bowling-kata/README.md)
 - [Mars Rover](08.mars-rover/README.md)
+- [Algorithmique Wars](09.algos-star-wars/README.md)
