@@ -1,4 +1,4 @@
-## Intro aux tests ?**
+## Intro aux tests ?
 ### **Connect - MythBusters**
 In small groups, categorize each sentence about Unit tests in :
 
