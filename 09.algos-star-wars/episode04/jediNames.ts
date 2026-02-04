@@ -1,5 +1,3 @@
-export function uniqueJediNames(names: string[]): string[] {
-    return Array.from(
-        new Set(names)
-    );
-}
+export const uniqueJediNames = (names: string[]): string[] => Array.from(
+    new Set(names)
+);

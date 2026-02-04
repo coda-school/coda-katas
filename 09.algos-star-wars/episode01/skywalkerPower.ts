@@ -4,7 +4,7 @@ export type Jedi = {
     children: Jedi[]
 }
 
-export function skywalkerPower(root: Jedi): number {
+export const skywalkerPower = (root: Jedi): number => {
     if (!root) return 0;
 
     let total = root.power;
@@ -12,7 +12,7 @@ export function skywalkerPower(root: Jedi): number {
         total += skywalkerPower(child);
     }
     return total;
-}
+};
 
 const skywalkerPowerFor = (jedis: Jedi[]) => jedis.reduce(
     (power, child) => power + skywalkerPower(child),
