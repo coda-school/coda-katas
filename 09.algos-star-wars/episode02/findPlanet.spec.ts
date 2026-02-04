@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest"
-import {findPlanet, Planet} from "../src/findPlanet";
+import {findPlanet, Planet} from "./findPlanet";
 
 const galaxy: Planet = {
     name: "Coruscant",
@@ -10,7 +10,7 @@ const galaxy: Planet = {
     ]
 }
 
-describe("findPlanet", () => {
+describe("Episode 2 : l'arbre des Planètes", () => {
     it("finds planets in the galaxy", () => {
         const targets = ["Naboo","Endor","Geonosis","Coruscant","Hoth","Tatooine","Dagobah","Alderaan","Mustafar","Yavin"]
         const expected = [true,true,true,true,true,true,true,true,true,false];
