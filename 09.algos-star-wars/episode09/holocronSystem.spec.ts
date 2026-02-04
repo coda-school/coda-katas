@@ -1,7 +1,7 @@
-import { describe, it, expect } from 'vitest';
+import {describe, expect, it} from 'vitest';
 import {calculateForceAverage, hqsToDecimal} from "./holocronSystem";
 
-describe('Episode 10: Le Mystère du Système Holocron', () => {
+describe('Episode 09: Le Mystère du Système Holocron', () => {
     describe('hqsToDecimal', () => {
         it('converts single symbols', () => {
             expect(hqsToDecimal('⚫')).toBe(-2);

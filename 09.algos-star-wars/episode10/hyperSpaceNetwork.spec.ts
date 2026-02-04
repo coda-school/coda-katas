@@ -1,7 +1,7 @@
-import { describe, it, expect } from 'vitest';
+import {describe, expect, it} from 'vitest';
 import {canReach, HyperspaceNetwork} from "./hyperSpaceNetwork";
 
-describe('Episode 9: Les Routes de l\'Hyperespace', () => {
+describe('Episode 10: Les Routes de l\'Hyperespace', () => {
     const network: HyperspaceNetwork = {
         'Coruscant': ['Tatooine', 'Naboo'],
         'Tatooine': ['Hoth'],
