@@ -1,4 +1,13 @@
 export function isSithCode(code: string): boolean {
-    // TODO: Vérifier récursivement si c'est un palindrome
-    return false;
+    const cleaned = code.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+    function isPalindromeRecursive(str: string): boolean {
+        if (str.length <= 1) return true;
+
+        return str[0] === str[str.length - 1]
+            ? isPalindromeRecursive(str.slice(1, -1))
+            : false;
+    }
+
+    return isPalindromeRecursive(cleaned);
 }
