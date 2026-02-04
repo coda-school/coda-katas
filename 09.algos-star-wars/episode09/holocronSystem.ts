@@ -1,4 +1,4 @@
-export type HolocronSymbol = '⚫' | '⚪' | '0' | '⭐' | '💫';
+export type HolocronSymbol = '⚫' | '⚪' | '0' | '⭐' | 'Y';
 
 /**
  * Convertit un nombre en système HQS (Holocron) en décimal
