@@ -1,21 +1,27 @@
-export type HolocronSymbol = '⚫' | '⚪' | '0' | '⭐' | '💫';
+export type HolocronSymbol = '⚫' | '⚪' | '0' | '⭐' | 'Y';
 
-/**
- * Convertit un nombre en système HQS (Holocron) en décimal
- * @param hqs - Nombre au format HQS (ex: "💫⭐0⚪")
- * @returns Le nombre en décimal
- */
-export function hqsToDecimal(hqs: string): number {
-    // TODO: Convertir le nombre HQS en décimal
-    return 0;
-}
+const symbols: Record<HolocronSymbol, number> = {
+    '⚫': -2,
+    '⚪': -1,
+    '0': 0,
+    '⭐': 1,
+    'Y': 2
+};
 
-/**
- * Calcule la moyenne des mesures de Force
- * @param measurements - Tableau de mesures au format HQS
- * @returns La moyenne décimale de toutes les mesures
- */
-export function calculateForceAverage(measurements: string[]): number {
-    // TODO: Convertir chaque mesure et calculer la moyenne
-    return 0;
-}
+export const hqsToDecimal = (gqs: string): number => {
+    let sum = 0;
+    const chars = [...gqs];   // pour bien gérer les symboles Unicode
+
+    for (let i = 0; i < chars.length; i++) {
+        const symbol = chars[chars.length - 1 - i] as HolocronSymbol; // équivalent du reverse + index
+        sum += symbols[symbol] * Math.pow(5, i);
+    }
+
+    return sum;
+};
+
+export const hqsToDecimalWithReducer = (gqs: string): number =>
+    [...gqs].reverse()
+        .map(c => c as HolocronSymbol)
+        .map((s, index) => symbols[s] * Math.pow(5, index))
+        .reduce((sum, value) => sum + value, 0);
