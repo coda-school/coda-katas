@@ -1,3 +1,5 @@
 export function uniqueJediNames(names: string[]): string[] {
-    return [];
+    return Array.from(
+        new Set(names)
+    );
 }
