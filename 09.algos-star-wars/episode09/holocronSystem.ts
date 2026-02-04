@@ -10,10 +10,10 @@ const symbols: Record<HolocronSymbol, number> = {
 
 export const hqsToDecimal = (gqs: string): number => {
     let sum = 0;
-    const chars = [...gqs];   // pour bien gérer les symboles Unicode
+    const chars = [...gqs];
 
     for (let i = 0; i < chars.length; i++) {
-        const symbol = chars[chars.length - 1 - i] as HolocronSymbol; // équivalent du reverse + index
+        const symbol = chars[chars.length - 1 - i] as HolocronSymbol;
         sum += symbols[symbol] * Math.pow(5, i);
     }
 
