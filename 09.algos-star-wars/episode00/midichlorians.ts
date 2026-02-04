@@ -18,3 +18,11 @@ export const totalMidichloriansWithForeach = (jedis: Jedi[]): number => {
 
 export const totalMidichloriansWithReducer = (jedis: Jedi[]): number =>
     jedis.reduce((midichlorians, jedi) => jedi.midichlorians + midichlorians, 0);
+
+export const totalMidichloriansRecursively = (jedis: Jedi[]): number => {
+    const midichloriansRecursively = (remainingJedis: Jedi[]): number => {
+        if (remainingJedis.length == 0) return 0;
+        return remainingJedis[0].midichlorians + midichloriansRecursively(remainingJedis.slice(1));
+    };
+    return midichloriansRecursively(jedis);
+};
