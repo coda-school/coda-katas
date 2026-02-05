@@ -24,5 +24,13 @@ export const totalMidichloriansRecursively = (jedis: Jedi[]): number => {
     return midichloriansRecursively(jedis);
 };
 
+export const totalMidichloriansRecursivelyWithIndex = (jedis: Jedi[]): number => {
+    const midichloriansRecursively = (jedis: Jedi[], currentIndex: number): number => {
+        if (currentIndex == jedis.length) return 0;
+        return jedis[currentIndex].midichlorians + midichloriansRecursively(jedis, currentIndex + 1);
+    };
+    return midichloriansRecursively(jedis, 0);
+};
+
 export const totalMidichloriansWithReducer = (jedis: Jedi[]): number =>
     jedis.reduce((midichlorians, jedi) => jedi.midichlorians + midichlorians, 0);
