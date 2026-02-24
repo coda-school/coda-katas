@@ -4,21 +4,21 @@ export type Jedi = {
     children: Jedi[]
 }
 
-export const skywalkerPower = (root: Jedi): number => {
+export const skywalkerPowerWithFor = (root: Jedi): number => {
     if (!root) return 0;
 
     let total = root.power;
     for (const child of root.children) {
-        total += skywalkerPower(child);
+        total += skywalkerPowerWithFor(child);
     }
     return total;
 };
 
-const skywalkerPowerFor = (jedis: Jedi[]) => jedis.reduce(
+const skywalkerPowerForPadawans = (jedis: Jedi[]) => jedis.reduce(
     (power, child) => power + skywalkerPower(child),
     0);
 
-export const skywalkerPowerWithoutFor = (root: Jedi): number => {
+export const skywalkerPower = (root: Jedi): number => {
     if (!root) return 0;
-    return root.power + skywalkerPowerFor(root.children);
+    return root.power + skywalkerPowerForPadawans(root.children);
 };

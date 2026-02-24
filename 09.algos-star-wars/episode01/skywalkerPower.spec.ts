@@ -1,5 +1,5 @@
 import {describe, expect, it} from 'vitest'
-import {Jedi, skywalkerPower, skywalkerPowerWithoutFor} from "./skywalkerPower";
+import {Jedi, skywalkerPower, skywalkerPowerWithFor} from "./skywalkerPower";
 
 const tree: Jedi = {
     name: "Anakin",
@@ -22,7 +22,7 @@ const tree: Jedi = {
 
 describe("Episode 1 : la puissance de Skywalker", () => {
     it("calculates total power of the bloodline", () => {
+        expect(skywalkerPowerWithFor(tree)).toBe(410);
         expect(skywalkerPower(tree)).toBe(410);
-        expect(skywalkerPowerWithoutFor(tree)).toBe(410);
     })
 })
