@@ -11,5 +11,3 @@ const galaxy: Planet = {
     ]
 }
 ```
-
-Si on appelle `pop` sur une pile vide elle doit retourner `undefined`.
